@@ -57,7 +57,7 @@ pipeline {
                 sh '''
                 TOMCAT_WEBAPPS="/Users/rathikindicharanteja/Applications/apache-tomcat-11.0.11/webapps"
                 WAR_FILE="$TOMCAT_WEBAPPS/springbootcarapi.war"
-                WAR_DIR="$TOMCAT_WEBAPPS/springbootCARapi"
+                WAR_DIR="$TOMCAT_WEBAPPS/springbootcarapi"
 
                 if [ -f "$WAR_FILE" ]; then
                     rm -f "$WAR_FILE"
@@ -67,7 +67,7 @@ pipeline {
                     rm -rf "$WAR_DIR"
                 fi
 
-                cp SpringBootCARDemo/target/*.war "$TOMCAT_WEBAPPS/"
+                cp CAR-BACKEND/target/*.war "$TOMCAT_WEBAPPS/"
                 '''
             }
         }
