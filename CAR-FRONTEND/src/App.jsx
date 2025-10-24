@@ -8,11 +8,11 @@ import FindByName from "./components/FindByName";
 function App() {
   return (
     <BrowserRouter basename="/carfrontend">
-      <center><h1 className="text-4xl font-bold">Product Manager</h1></center>
+      <center><h1 className="text-4xl font-bold">Car Manager</h1></center>
       <Navbar />
       <Routes>
-        <Route path="/" element={<AddProduct />} />
-        <Route path="/manage" element={<Manage />} />
+        <Route path="/add" element={<AddProduct />} />
+        <Route path="/" element={<Manage />} />
         <Route path="/find" element={<FindByName />} />
       </Routes>
     </BrowserRouter>
